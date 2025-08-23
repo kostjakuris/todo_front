@@ -1,0 +1,42 @@
+.todo {
+  max-width: 700px;
+  width: 100%;
+  border: 1px solid white;
+  margin-top: 40px;
+  border-radius: 15px;
+  padding: 0 30px;
+
+  &__title {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 39.01px;
+    @media screen and (max-width: 460px) {
+      font-size: 14px;
+      line-height: 21px;
+    }
+  }
+
+  &__text {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 20.01px;
+    @media screen and (max-width: 460px) {
+      font-size: 14px;
+      line-height: 21px;
+    }
+  }
+
+  &__buttons {
+    width: 280px;
+    height: 40px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__button {
+    width: 150px;
+    height: 30px;
+    background: #9890e3;
+    border-radius: 25px;
+  }
+}
