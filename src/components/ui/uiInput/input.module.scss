@@ -1,0 +1,57 @@
+.input {
+  &__field {
+    border: 1px solid white;
+    width: 400px;
+    height: 48px;
+    border-radius: 25px;
+    padding: 0 16px;
+
+    &:first-child {
+      margin-bottom: 10px;
+    }
+
+    ::placeholder {
+      font-family: sans-serif;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 21.6px;
+      color: white;
+      opacity: 1;
+      @media screen and (max-width: 460px) {
+        font-size: 16px;
+        line-height: 19.2px;
+      }
+    }
+
+    @media screen and (max-width: 460px) {
+      font-size: 16px;
+      line-height: 19.2px;
+    }
+  }
+
+  &__open {
+    display: block;
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.8px;
+    @media screen and (max-width: 460px) {
+      font-size: 12px;
+      line-height: 18px;
+    }
+  }
+
+  &__close {
+    display: none;
+  }
+
+  &__unverified_text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16.8px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #FF647C;
+    margin: 15px 0 20px 15px;
+  }
+}
