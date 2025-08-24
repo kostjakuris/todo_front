@@ -32,7 +32,7 @@ const TaskList = () => {
               textAlign={'center'}
               mt={'20px'}
               className={styles.task__title}>
-              There is no tasks yet!
+              There are no tasks yet!
             </Heading>
           }
         </AnimatePresence>

@@ -4,40 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="81770f22-a782-45f4-8f32-0b4a8c1fc74f" name="Changes" comment="add modals">
-      <change afterPath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/Search.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/SearchGradient.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/task/components/TaskSearch/TaskSearch.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/task/components/TaskSearch/task-search.module.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ui/animationWrapper/AnimationWrapper.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/ui/modals/CreateTaskModal.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hooks/useSearch.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hooks/useTaskCategory.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/interfaces/image.interface.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/Delete.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/Delete.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/images/Edit.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/Edit.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/globals.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/task/TaskPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/task/TaskPage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/task/components/taskCategory/TaskCategory.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/task/components/taskList/TaskList.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/task/components/taskItem/TaskItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/task/components/taskItem/TaskItem.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/task/task-page.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/task/task-page.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/todo/TodoPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/todo/TodoPage.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/todo/components/todoItem/TodoItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/todo/components/todoItem/TodoItem.tsx" afterDir="false" />
+    <list default="true" id="81770f22-a782-45f4-8f32-0b4a8c1fc74f" name="Changes" comment="finish todo app">
+      <change beforePath="$PROJECT_DIR$/src/components/task/components/taskList/TaskList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/task/components/taskList/TaskList.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/todo/components/todoList/TodoList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/todo/components/todoList/TodoList.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/itemForm/ItemForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/itemForm/ItemForm.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/itemForm/item-form.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/itemForm/item-form.module.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hooks/useTasks.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/useTasks.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hooks/useTasksDragAndDrop.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/useTasksDragAndDrop.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/slice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/slice.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/store.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -170,7 +139,7 @@
       <workItem from="1756043362704" duration="1127000" />
       <workItem from="1756044502644" duration="913000" />
       <workItem from="1756045429021" duration="2990000" />
-      <workItem from="1756048452792" duration="343000" />
+      <workItem from="1756048452792" duration="895000" />
     </task>
     <task id="LOCAL-00001" summary="init project">
       <option name="closed" value="true" />
@@ -204,7 +173,15 @@
       <option name="project" value="LOCAL" />
       <updated>1755968312082</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="finish todo app">
+      <option name="closed" value="true" />
+      <created>1756048856909</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1756048856909</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -220,6 +197,7 @@
     <MESSAGE value="implement todo page" />
     <MESSAGE value="implement task page" />
     <MESSAGE value="add modals" />
-    <option name="LAST_COMMIT_MESSAGE" value="add modals" />
+    <MESSAGE value="finish todo app" />
+    <option name="LAST_COMMIT_MESSAGE" value="finish todo app" />
   </component>
 </project>

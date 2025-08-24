@@ -18,14 +18,27 @@ const TodoList = () => {
   if (data?.length > 0) {
     return (
       <Flex className={'flex-col max-w-[800px] w-full justify-center items-center'}>
-        <Heading as={'h2'} className={styles.todos__header}>Todos</Heading>
+        {
+          data?.length > 0 ?
+            <Heading as={'h2'} className={styles.todos__header}>Todos</Heading>
+            : null
+        }
         <AnimatePresence>
           {
-            data?.map((element: TodoList) =>
-              <AnimationWrapper key={element.id} class_name={todoStyles.todo}>
-                <TodoItem key={element.id} todoId={element.id} todoName={element.name} />
-              </AnimationWrapper>
-            )
+            data?.length > 0 ?
+              data?.map((element: TodoList) =>
+                <AnimationWrapper key={element.id} class_name={todoStyles.todo}>
+                  <TodoItem key={element.id} todoId={element.id} todoName={element.name} />
+                </AnimationWrapper>
+              )
+              :
+              <Heading
+                as={'h4'}
+                textAlign={'center'}
+                mt={'20px'}
+                className={styles.todos__header}>
+                There are no todos yet!
+              </Heading>
           }
         </AnimatePresence>
       </Flex>
