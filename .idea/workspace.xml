@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="81770f22-a782-45f4-8f32-0b4a8c1fc74f" name="Changes" comment="finish todo app">
-      <change beforePath="$PROJECT_DIR$/src/components/task/components/taskList/TaskList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/task/components/taskList/TaskList.tsx" afterDir="false" />
+    <list default="true" id="81770f22-a782-45f4-8f32-0b4a8c1fc74f" name="Changes" comment="add no todos text">
       <change beforePath="$PROJECT_DIR$/src/components/todo/components/todoList/TodoList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/todo/components/todoList/TodoList.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/todo/components/todoList/todo-list.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/todo/components/todoList/todo-list.module.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,7 +139,7 @@
       <workItem from="1756043362704" duration="1127000" />
       <workItem from="1756044502644" duration="913000" />
       <workItem from="1756045429021" duration="2990000" />
-      <workItem from="1756048452792" duration="895000" />
+      <workItem from="1756048452792" duration="3756000" />
     </task>
     <task id="LOCAL-00001" summary="init project">
       <option name="closed" value="true" />
@@ -181,7 +181,15 @@
       <option name="project" value="LOCAL" />
       <updated>1756048856909</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="add no todos text">
+      <option name="closed" value="true" />
+      <created>1756049394764</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1756049394764</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -198,6 +206,7 @@
     <MESSAGE value="implement task page" />
     <MESSAGE value="add modals" />
     <MESSAGE value="finish todo app" />
-    <option name="LAST_COMMIT_MESSAGE" value="finish todo app" />
+    <MESSAGE value="add no todos text" />
+    <option name="LAST_COMMIT_MESSAGE" value="add no todos text" />
   </component>
 </project>
