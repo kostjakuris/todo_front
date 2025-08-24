@@ -11,15 +11,11 @@ import { LoaderWrapper } from '../ui/loaderWrapper/LoaderWrapper';
 import { Box, Button, Flex } from '@chakra-ui/react';
 
 const TodoPage = () => {
-  const [createNewTodo, {
-    isLoading: isCreateTodoLoading,
-  }] = useCreateNewTodoMutation();
+  const [createNewTodo, {isLoading: isCreateTodoLoading}] = useCreateNewTodoMutation();
   
   const [_, {isLoading: isEditTodoLoading}] = useEditTodoMutation();
   
-  
   const [isCreateList, setIsCreateList] = useState(false);
-  
   
   const isLoading = isCreateTodoLoading || isEditTodoLoading;
   

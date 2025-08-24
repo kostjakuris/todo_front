@@ -4,7 +4,7 @@ import { todoApi } from './todoApi';
 
 
 const userReducer = combineReducers({
-  auth: authReducer,
+  todo: authReducer,
   [todoApi.reducerPath]: todoApi.reducer,
 });
 export const setupStore = () => {

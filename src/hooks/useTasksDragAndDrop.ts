@@ -24,7 +24,7 @@ export const useTaskDragAndDrop = (
   const ref = useRef<HTMLDivElement>(null);
   const dispatch = useAppDispatch();
   const [editTaskPosition] = useEditTaskPositionMutation();
-  const {taskList, category} = useAppSelector(state => state.auth);
+  const {taskList, category} = useAppSelector(state => state.todo);
   
   const [{handlerId}, drop] = useDrop<DragItem, void, {handlerId: Identifier | null}>({
     accept: ItemTypes.TASK,

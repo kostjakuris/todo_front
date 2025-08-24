@@ -1,8 +1,11 @@
 import React from 'react';
 import styles from './todo-list.module.scss';
+import todoStyles from '../todoItem/todo-item.module.scss';
 import TodoItem from '../todoItem/TodoItem';
 import { useGetAllTodosQuery } from '../../../../lib/todoApi';
 import { Flex, Heading } from '@chakra-ui/react';
+import { AnimatePresence } from 'framer-motion';
+import AnimationWrapper from '../../../ui/animationWrapper/AnimationWrapper';
 
 type TodoList = {
   id: number;
@@ -16,9 +19,15 @@ const TodoList = () => {
     return (
       <Flex className={'flex-col max-w-[800px] w-full justify-center items-center'}>
         <Heading as={'h2'} className={styles.todos__header}>Todos</Heading>
-        {
-          data?.map((element: TodoList) => <TodoItem key={element.id} todoId={element.id} todoName={element.name} />)
-        }
+        <AnimatePresence>
+          {
+            data?.map((element: TodoList) =>
+              <AnimationWrapper key={element.id} class_name={todoStyles.todo}>
+                <TodoItem key={element.id} todoId={element.id} todoName={element.name} />
+              </AnimationWrapper>
+            )
+          }
+        </AnimatePresence>
       </Flex>
     );
   }

@@ -33,25 +33,29 @@ const TaskItem: FC<TaskItemProps> = ({
     status,
   );
   
+  
   return (
     <>
       {
         <Box
-          className={styles.task__container}
           ref={ref}
           style={{opacity}} data-handler-id={handlerId}
+          padding={'30px'}
+          borderColor={status === 'done' ? '#22c55e' : '#ef4444'}
+          borderRadius={'15px'}
+          borderWidth={'1px'}
           onDragEndCapture={async() => await changeTaskPosition()}
         >
           <Flex className={'items-center justify-between p-[20px] w-full'}>
             <Heading as={'h4'} className={`${styles.task__title} mr-5`}>{name}</Heading>
             <Flex className={'items-center justify-between h-[40px]'}>
-              <Button backgroundColor={'black'} h={'20px'} outline={'none'}
+              <Button backgroundColor={'transparent'} h={'20px'} outline={'none'}
                 onClick={() => openModal(
                   <EditTaskModal id={id} />
                 )}>
                 <Edit />
               </Button>
-              <Button backgroundColor={'black'} h={'20px'} outline={'none'}
+              <Button backgroundColor={'transparent'} h={'20px'} outline={'none'}
                 onClick={() => openModal(
                   <DeleteModal id={id} location={'task'} />
                 )}>

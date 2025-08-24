@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="81770f22-a782-45f4-8f32-0b4a8c1fc74f" name="Changes" comment="add modals">
+      <change afterPath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/Search.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/SearchGradient.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/task/components/TaskSearch/TaskSearch.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/task/components/TaskSearch/task-search.module.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ui/animationWrapper/AnimationWrapper.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/ui/modals/CreateTaskModal.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hooks/useSearch.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hooks/useTaskCategory.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/interfaces/image.interface.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/Delete.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/Delete.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/images/Edit.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/public/images/Edit.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/globals.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/task/TaskPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/task/TaskPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/task/components/taskCategory/TaskCategory.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/task/components/taskList/TaskList.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/task/components/taskItem/TaskItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/task/components/taskItem/TaskItem.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/task/task-page.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/task/task-page.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/todo/TodoPage.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/todo/TodoPage.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/todo/components/todoItem/TodoItem.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/todo/components/todoItem/TodoItem.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/todo/components/todoList/TodoList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/todo/components/todoList/TodoList.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/itemForm/ItemForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/itemForm/ItemForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/itemForm/item-form.module.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/itemForm/item-form.module.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hooks/useTasks.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/useTasks.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hooks/useTasksDragAndDrop.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/useTasksDragAndDrop.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/slice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/slice.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/store.ts" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="SCSS File" />
+        <option value="TypeScript File" />
+        <option value="TypeScript JSX File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;kostjakuris&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:kostjakuris/todo_front.git&quot;,
+    &quot;accountId&quot;: &quot;c9f86a14-f034-40fc-8415-b8c46e9c27cf&quot;
+  }
+}</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="31ak6YVg6qv4SQPHQGqOJ8HNjcM" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;js.debugger.nextJs.config.created.client&quot;: &quot;true&quot;,
+    &quot;js.debugger.nextJs.config.created.server&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;F:/My_works/todo_front/src/hooks&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;SCSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;F:\\My_works\\todo_front\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\My_works\todo_front\src\hooks" />
+      <recent name="F:\My_works\todo_front\public\images" />
+      <recent name="F:\My_works\todo_front\src\components\task\components" />
+      <recent name="F:\My_works\todo_front\src\components\ui" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\My_works\todo_front\src\components\task" />
+      <recent name="F:\My_works\todo_front\src\components\task\components" />
+      <recent name="F:\My_works\todo_front\src\components\todo" />
+      <recent name="F:\My_works\todo_front\src\components\todo\components" />
+      <recent name="F:\My_works\todo_front\src\components\ui" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.Next.js: server-side">
+    <configuration name="Next.js: debug client-side" type="JavascriptDebugType" uri="http://localhost:3000/">
+      <method v="2" />
+    </configuration>
+    <configuration name="Next.js: server-side" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-e03c56caf84a-JavaScript-WS-252.23892.411" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="81770f22-a782-45f4-8f32-0b4a8c1fc74f" name="Changes" comment="" />
+      <created>1755769395912</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1755769395912</updated>
+      <workItem from="1755769397135" duration="322000" />
+      <workItem from="1755770223209" duration="119000" />
+      <workItem from="1755770494126" duration="3862000" />
+      <workItem from="1755776077079" duration="14000" />
+      <workItem from="1755776124003" duration="80000" />
+      <workItem from="1755776208704" duration="14259000" />
+      <workItem from="1755794404230" duration="584000" />
+      <workItem from="1755794996510" duration="347000" />
+      <workItem from="1755795350734" duration="923000" />
+      <workItem from="1755843866674" duration="15272000" />
+      <workItem from="1755861328796" duration="9701000" />
+      <workItem from="1755880211240" duration="5477000" />
+      <workItem from="1755931349600" duration="3405000" />
+      <workItem from="1755935164777" duration="5919000" />
+      <workItem from="1755941357908" duration="2508000" />
+      <workItem from="1755945127001" duration="163000" />
+      <workItem from="1755945296317" duration="3189000" />
+      <workItem from="1755948534667" duration="5257000" />
+      <workItem from="1755954779386" duration="5423000" />
+      <workItem from="1755960250940" duration="8073000" />
+      <workItem from="1755968393969" duration="31000" />
+      <workItem from="1755968534749" duration="24000" />
+      <workItem from="1756023365289" duration="4509000" />
+      <workItem from="1756027915279" duration="1898000" />
+      <workItem from="1756043362704" duration="1127000" />
+      <workItem from="1756044502644" duration="913000" />
+      <workItem from="1756045429021" duration="2990000" />
+      <workItem from="1756048452792" duration="343000" />
+    </task>
+    <task id="LOCAL-00001" summary="init project">
+      <option name="closed" value="true" />
+      <created>1755968151113</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1755968151113</updated>
+    </task>
+    <task id="LOCAL-00002" summary="implement todo page">
+      <option name="closed" value="true" />
+      <created>1755968252614</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1755968252614</updated>
+    </task>
+    <task id="LOCAL-00003" summary="implement task page">
+      <option name="closed" value="true" />
+      <created>1755968295400</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1755968295400</updated>
+    </task>
+    <task id="LOCAL-00004" summary="add modals">
+      <option name="closed" value="true" />
+      <created>1755968312082</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1755968312082</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/next.config.mjs" />
+      </list>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="init project" />
+    <MESSAGE value="implement todo page" />
+    <MESSAGE value="implement task page" />
+    <MESSAGE value="add modals" />
+    <option name="LAST_COMMIT_MESSAGE" value="add modals" />
+  </component>
+</project>

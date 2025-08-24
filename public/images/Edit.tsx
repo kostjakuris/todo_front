@@ -1,10 +1,8 @@
 import React, { FC } from 'react';
+import { ImageProps } from '../../src/interfaces/image.interface';
 
-interface EditProps {
-  class_name?: string;
-}
 
-export const Edit: FC<EditProps> = ({class_name}) => {
+export const Edit: FC<ImageProps> = ({class_name}) => {
   return (
     <svg className={class_name} width='30' height='30' viewBox='0 0 20 23' fill='none'
       xmlns='http://www.w3.org/2000/svg'>

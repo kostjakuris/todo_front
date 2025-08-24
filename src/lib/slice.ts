@@ -37,22 +37,19 @@ const tasksSlice = createSlice({
     setCategory(state, action: PayloadAction<keyof TasksList>) {
       state.category = action.payload;
     },
+    setSearchingTasks(state, action) {
+      state.taskList.all = action.payload;
+      state.taskList.done = action.payload.filter((task: Task) => task.status === 'done');
+      state.taskList.undone = action.payload.filter((task: Task) => task.status === 'undone');
+    },
     moveTask(state, action: PayloadAction<MoveTaskPayload>) {
       const {category, dragIndex, hoverIndex} = action.payload;
       const item = state.taskList[category][dragIndex];
       state.taskList[category].splice(dragIndex, 1);
       state.taskList[category].splice(hoverIndex, 0, item);
     },
-    sortTasksInAscentOrder(state, action: PayloadAction<keyof TasksList>) {
-      const category = action.payload;
-      state.taskList[category].sort((a, b) => a.position - b.position);
-    },
-    sortTasksInDescentOrder(state, action: PayloadAction<keyof TasksList>) {
-      const category = action.payload;
-      state.taskList[category].sort((a, b) => b.position - a.position);
-    }
   },
 });
 
-export const {setTasks, moveTask, setCategory, sortTasksInDescentOrder, sortTasksInAscentOrder} = tasksSlice.actions;
+export const {setTasks, moveTask, setCategory, setSearchingTasks} = tasksSlice.actions;
 export default tasksSlice.reducer;

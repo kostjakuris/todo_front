@@ -18,7 +18,7 @@ const TodoItem: FC<TodoItemProps> = ({todoId, todoName}) => {
   const {openModal} = useModal();
   
   return (
-    <Flex justify={'center'} alignItems={'center'} className={styles.todo}>
+    <Flex justify={'center'} alignItems={'center'}>
       <Flex p={'20px'} className={'justify-between items-center max-w-[600px] w-full rounded-[15px]'}>
         <Heading as={'h4'} className={styles.todo__title}>{todoName}</Heading>
         <Flex className={'justify-between items-center h-[40px]'}>

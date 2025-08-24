@@ -1,33 +1,30 @@
 'use client';
-import React, { FC, useState } from 'react';
+import React, { FC } from 'react';
 import styles from './task-page.module.scss';
 import { HTML5Backend } from 'react-dnd-html5-backend';
 import { DndProvider } from 'react-dnd';
-import TaskCategory from './components/taskCategory/TaskCategory';
+import TaskList from './components/taskList/TaskList';
 import { useTasks } from '../../hooks/useTasks';
 import { LoaderWrapper } from '../ui/loaderWrapper/LoaderWrapper';
 import { Box, Button, createListCollection, Flex } from '@chakra-ui/react';
 import TaskFilter from './components/taskFilter/TaskFilter';
-import { createTaskSchema } from '../validation/todoValidation';
-import { createTaskFields } from '../ui/formField/formFields';
-import ItemForm from '../ui/itemForm/ItemForm';
-import { useAppDispatch } from '../../lib/hooks';
-import { setCategory } from '../../lib/slice';
+import TaskSearch from './components/TaskSearch/TaskSearch';
+import { useSearch } from '../../hooks/useSearch';
+import { useTaskCategory } from '../../hooks/useTaskCategory';
+import { useModal } from '../../providers/ModalProvider/ModalProvider.hooks';
+import CreateTaskModal from '../ui/modals/CreateTaskModal';
 
 interface TaskListProps {
   id: string;
 }
 
-
 const TaskPage: FC<TaskListProps> = ({id}) => {
-  const [isCreateTask, setIsCreateTask] = useState(false);
-  const dispatch = useAppDispatch();
-  const {onSubmitCreateTask, isLoading, sortInAscendingOrder, sortInDescendingOrder} = useTasks(
-    {id, setIsVisible: setIsCreateTask});
+  const {isLoading, sortInAscendingOrder, sortInDescendingOrder} = useTasks(
+    {id});
+  const {openModal} = useModal();
   
-  const handleCategoryChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
-    dispatch(setCategory(event.target.value as 'all' | 'done' | 'undone'));
-  };
+  const {inputValue, onSearchChange} = useSearch(id);
+  const {handleCategoryChange, taskCategory} = useTaskCategory();
   
   const handleSortChange = (event: React.ChangeEvent<HTMLSelectElement>) => {
     if (event.target.value === 'ascending') {
@@ -44,30 +41,15 @@ const TaskPage: FC<TaskListProps> = ({id}) => {
     ],
   });
   
-  const taskCategory = createListCollection({
-    items: [
-      {label: 'All', value: 'all'},
-      {label: 'Done', value: 'done'},
-      {label: 'Undone', value: 'undone'},
-    ],
-  });
-  
-  
   return (
     <LoaderWrapper isLoading={isLoading}>
       <Flex className='flex-col items-center justify-center'>
-        <Button m={'40px 0'} className={styles.task__button} onClick={() => setIsCreateTask((prev) => !prev)}>
+        <Button m={'40px 0'} className={styles.task__button} onClick={() => openModal(
+          <CreateTaskModal id={id} />
+        )}>
           Create new task
         </Button>
-        <Box className={isCreateTask ? 'block' : 'hidden'}>
-          <ItemForm
-            inputText='Create new task'
-            validation={createTaskSchema}
-            fields={createTaskFields}
-            onFormSubmit={onSubmitCreateTask}
-            setIsVisible={setIsCreateTask}
-          />
-        </Box>
+        <TaskSearch value={inputValue} onChange={onSearchChange} />
         <Box className='max-w-[95%] w-full mt-30'>
           <Flex ml={'auto'} mt={'30px'} justify={'flex-end'}>
             <TaskFilter
@@ -86,7 +68,7 @@ const TaskPage: FC<TaskListProps> = ({id}) => {
             />
           </Flex>
           <DndProvider backend={HTML5Backend}>
-            <TaskCategory />
+            <TaskList />
           </DndProvider>
         </Box>
       </Flex>

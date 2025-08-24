@@ -9,11 +9,10 @@ interface TodoInputProps {
   fields: Array<{formName: string; placeholder: string; select?: boolean; collection?: any}>;
   validation?: any;
   onFormSubmit: (values: any) => void;
-  setIsVisible?: (isVisible: boolean) => void;
   inputText: string;
 }
 
-const ItemForm: FC<TodoInputProps> = ({fields, validation, onFormSubmit, setIsVisible, inputText}) => {
+const ItemForm: FC<TodoInputProps> = ({fields, validation, onFormSubmit, inputText}) => {
   const {closeModal} = useModal();
   
   const initialValues = fields.reduce<Record<string, string>>((acc, field) => {
@@ -45,7 +44,6 @@ const ItemForm: FC<TodoInputProps> = ({fields, validation, onFormSubmit, setIsVi
         <Flex mb={'20px'} className={'items-center justify-between'}>
           <Button w={'190px'} className={styles.input__cancel} type='reset' onClick={() => {
             closeModal();
-            setIsVisible && setIsVisible(false);
           }}>
             Cancel
           </Button>
