@@ -1,9 +1,9 @@
 'use client';
 import { ChangeEvent, useEffect, useMemo, useState } from 'react';
-import { useAppDispatch, useAppSelector } from '../lib/hooks';
-import { useGetAllTasksQuery } from '../lib/todoApi';
+import { useAppDispatch, useAppSelector } from '../store/hooks';
+import { useGetAllTasksQuery } from '../api/todoApi';
 import Fuse, { IFuseOptions } from 'fuse.js';
-import { setSearchingTasks, setTasks, TasksList } from '../lib/slice';
+import { setSearchingTasks, setTasks, TasksList } from '../store/slice';
 import { Task } from '../interfaces/form.interface';
 
 export const useSearch = (id: string) => {

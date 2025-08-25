@@ -1,7 +1,7 @@
 import React, { FC } from 'react';
 import { useFormik } from 'formik';
 import { Button, Flex, Heading } from '@chakra-ui/react';
-import styles from './item-form.module.scss';
+import styles from './form-fields.module.scss';
 import FormField from '../formField/FormField';
 import { useModal } from '../../../providers/ModalProvider/ModalProvider.hooks';
 
@@ -12,7 +12,7 @@ interface TodoInputProps {
   inputText: string;
 }
 
-const ItemForm: FC<TodoInputProps> = ({fields, validation, onFormSubmit, inputText}) => {
+const FormFields: FC<TodoInputProps> = ({fields, validation, onFormSubmit, inputText}) => {
   const {closeModal} = useModal();
   
   const initialValues = fields.reduce<Record<string, string>>((acc, field) => {
@@ -54,4 +54,4 @@ const ItemForm: FC<TodoInputProps> = ({fields, validation, onFormSubmit, inputTe
   );
 };
 
-export default ItemForm;
+export default FormFields;

@@ -1,6 +1,6 @@
 import { combineReducers, configureStore } from '@reduxjs/toolkit';
 import authReducer from './slice';
-import { todoApi } from './todoApi';
+import { todoApi } from '../api/todoApi';
 
 
 const userReducer = combineReducers({

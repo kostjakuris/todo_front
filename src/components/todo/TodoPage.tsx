@@ -4,11 +4,11 @@ import styles from './todo-page.module.scss';
 import UIInput from '../ui/uiInput/UIInput';
 import { useFormik } from 'formik';
 import { ListFormFields } from '../../interfaces/form.interface';
-import { todoSchema } from '../validation/todoValidation';
+import { todoSchema } from '../validation/validation';
 import TodoList from './components/todoList/TodoList';
-import { useCreateNewTodoMutation, useEditTodoMutation } from '../../lib/todoApi';
+import { useCreateNewTodoMutation, useEditTodoMutation } from '../../api/todoApi';
 import { LoaderWrapper } from '../ui/loaderWrapper/LoaderWrapper';
-import { Box, Button, Flex } from '@chakra-ui/react';
+import { Button, Flex } from '@chakra-ui/react';
 
 const TodoPage = () => {
   const [createNewTodo, {isLoading: isCreateTodoLoading}] = useCreateNewTodoMutation();
@@ -47,11 +47,14 @@ const TodoPage = () => {
             isTouched={formik.touched.listName}
             error={formik.errors.listName}
           />
-          <Box>
+          <Flex justify={'space-between'}>
+            <Button className={styles.todo__cancel} onClick={() => setIsCreateList(false)} type='reset'>
+              Cancel
+            </Button>
             <Button className={styles.todo__submit} type='submit'>
               Create
             </Button>
-          </Box>
+          </Flex>
         </form>
         <TodoList />
       </Flex>

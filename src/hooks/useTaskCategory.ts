@@ -1,7 +1,7 @@
 'use client';
 import React from 'react';
-import { useAppDispatch } from '../lib/hooks';
-import { setCategory } from '../lib/slice';
+import { useAppDispatch } from '../store/hooks';
+import { setCategory } from '../store/slice';
 import { createListCollection } from '@chakra-ui/react';
 
 export const useTaskCategory = () => {

@@ -2,9 +2,9 @@
 import { useRef } from 'react';
 import { useDrag, useDrop } from 'react-dnd';
 import type { Identifier, XYCoord } from 'dnd-core';
-import { useAppDispatch, useAppSelector } from '../lib/hooks';
-import { moveTask } from '../lib/slice';
-import { useEditTaskPositionMutation } from '../lib/todoApi';
+import { useAppDispatch, useAppSelector } from '../store/hooks';
+import { moveTask } from '../store/slice';
+import { useEditTaskPositionMutation } from '../api/todoApi';
 
 export const ItemTypes = {
   TASK: 'task',

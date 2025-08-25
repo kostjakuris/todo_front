@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import { ListCollection, Portal, Select } from '@chakra-ui/react';
-import styles from '../itemForm/item-form.module.scss';
+import styles from '../formFields/form-fields.module.scss';
 
 export interface SelectProps {
   collection?: ListCollection<{label: string, value: string}>;

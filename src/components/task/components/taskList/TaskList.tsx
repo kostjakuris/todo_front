@@ -2,7 +2,7 @@ import React from 'react';
 import styles from '../../task-page.module.scss';
 import TaskItem from '../taskItem/TaskItem';
 import { Box, Flex, Heading } from '@chakra-ui/react';
-import { useAppSelector } from '../../../../lib/hooks';
+import { useAppSelector } from '../../../../store/hooks';
 import { AnimatePresence } from 'framer-motion';
 import AnimationWrapper from '../../../ui/animationWrapper/AnimationWrapper';
 

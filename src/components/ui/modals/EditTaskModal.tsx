@@ -2,8 +2,8 @@ import React, { FC } from 'react';
 import styles from './modals.module.scss';
 import { Box } from '@chakra-ui/react';
 import { editTaskFields } from '../formField/formFields';
-import ItemForm from '../itemForm/ItemForm';
-import { useEditTaskMutation } from '../../../lib/todoApi';
+import FormFields from '../formFields/FormFields';
+import { useEditTaskMutation } from '../../../api/todoApi';
 import { useModal } from '../../../providers/ModalProvider/ModalProvider.hooks';
 
 interface EditTaskModalProps {
@@ -30,7 +30,7 @@ const EditTaskModal: FC<EditTaskModalProps> = ({id}) => {
   };
   return (
     <Box className={styles.edit}>
-      <ItemForm
+      <FormFields
         inputText='Edit task'
         fields={editTaskFields}
         onFormSubmit={onSubmitEditTask}

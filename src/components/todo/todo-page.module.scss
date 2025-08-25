@@ -35,29 +35,25 @@
   }
 
   &__submit {
-    max-width: 400px;
-    width: 100%;
-    margin-top: 20px;
     background: linear-gradient(90deg, #9890e3 0%, #b1f4cf 100%);
   }
 
-  &__submit, &__send {
+  &__submit, &__send, &__cancel {
     color: black;
     cursor: pointer;
     height: 48px;
+    max-width: 180px;
+    width: 100%;
     border-radius: 25px;
     @media screen and (max-width: 460px) {
       height: 40px;
     }
   }
 
-  &__send {
-    width: 50px;
-    margin-left: 8px;
-
-    &:disabled {
-      opacity: 0.5;
-      cursor: not-allowed;
-    }
+  &__cancel {
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    margin-right: 20px;
   }
 }

@@ -2,7 +2,7 @@
 import React, { FC } from 'react';
 import styles from './modals.module.scss';
 import { useModal } from '../../../providers/ModalProvider/ModalProvider.hooks';
-import { useDeleteTaskMutation, useDeleteTodoMutation } from '../../../lib/todoApi';
+import { useDeleteTaskMutation, useDeleteTodoMutation } from '../../../api/todoApi';
 import { Box, Button, Flex, Text } from '@chakra-ui/react';
 
 interface DeleteModalProps {

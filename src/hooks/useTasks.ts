@@ -1,6 +1,6 @@
-import { useCreateNewTaskMutation, useDeleteTaskMutation, useGetAllTasksQuery } from '../lib/todoApi';
-import { useAppDispatch, useAppSelector } from '../lib/hooks';
-import { setTasks } from '../lib/slice';
+import { useCreateNewTaskMutation, useDeleteTaskMutation, useGetAllTasksQuery } from '../api/todoApi';
+import { useAppDispatch, useAppSelector } from '../store/hooks';
+import { setTasks } from '../store/slice';
 import { useModal } from '../providers/ModalProvider/ModalProvider.hooks';
 
 interface UseTasksProps {

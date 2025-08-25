@@ -2,15 +2,15 @@ import React from 'react';
 import styles from './modals.module.scss';
 import { useTasks } from '../../../hooks/useTasks';
 import { Box } from '@chakra-ui/react';
-import ItemForm from '../itemForm/ItemForm';
-import { createTaskSchema } from '../../validation/todoValidation';
+import FormFields from '../formFields/FormFields';
+import { createTaskSchema } from '../../validation/validation';
 import { createTaskFields } from '../formField/formFields';
 
 const CreateTaskModal = ({id}: {id: string}) => {
   const {onSubmitCreateTask} = useTasks({id});
   return (
     <Box className={styles.edit}>
-      <ItemForm
+      <FormFields
         inputText='Create new task'
         validation={createTaskSchema}
         fields={createTaskFields}

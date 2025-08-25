@@ -1,10 +1,10 @@
 'use client';
 import React, { FC } from 'react';
 import { useModal } from '../../../providers/ModalProvider/ModalProvider.hooks';
-import ItemForm from '../itemForm/ItemForm';
+import FormFields from '../formFields/FormFields';
 import { editTodoFields } from '../formField/formFields';
-import { editTodoSchema } from '../../validation/todoValidation';
-import { useEditTodoMutation } from '../../../lib/todoApi';
+import { editTodoSchema } from '../../validation/validation';
+import { useEditTodoMutation } from '../../../api/todoApi';
 import styles from './modals.module.scss';
 import { Box } from '@chakra-ui/react';
 
@@ -22,7 +22,7 @@ const EditTodoModal: FC<EditTodoModalProps> = ({id}) => {
   };
   return (
     <Box className={styles.edit}>
-      <ItemForm
+      <FormFields
         inputText={'Edit todo'}
         validation={editTodoSchema}
         fields={editTodoFields}
